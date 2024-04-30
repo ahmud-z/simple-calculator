@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    height: 400px;
+    min-height: 400px;
     min-width: 260px;
     background: #283245;
     border-radius: 18px;
@@ -93,11 +93,6 @@ form .equal {
     box-shadow: 3px 3px 10px rgba(12, 17, 22, 0.5), -3px -3px 10px rgba(79, 93, 103, 0.5);
     padding: 8px;
     border-radius: 5px;
-}
-
-body p {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.3);
 }
 
 .theme p {
