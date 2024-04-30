@@ -1,0 +1,103 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+    background: #DDE1E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    transition: all linear 0.1s;
+}
+
+.container {
+    height: 400px;
+    min-width: 260px;
+    background: #DDE1E7;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+form .display-screen {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px, 0;
+}
+
+form .display-screen input {
+    height: 70px;
+    width: 100%;
+    padding: 0 12px;
+    margin: 10px 0 25px 0;
+    text-align: end;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 3px 3px 9px rgba(94, 104, 121, 0.3);
+}
+
+.calculator form .btn {
+    color: black;
+    background: #DDE1E7;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 3px 3px 9px rgba(94, 104, 121, 0.3);
+}
+
+.calculator form .btn:active {
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 3px 3px 9px rgba(94, 104, 121, 0.3);
+}
+
+.calculator form .opt {
+    color: tomato;
+}
+
+form .equal {
+    color: white;
+    height: 50px;
+    width: 120px;
+    margin: 5px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 3px 3px 9px rgba(94, 104, 121, 0.3);
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.theme i {
+    font-size: 18px;
+    color: black;
+    background: #DDE1E7;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 3px 3px 9px rgba(94, 104, 121, 0.3);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+body p {
+    font-size: 15px;
+    color: rgba(112, 112, 112, 0.5);
+}
+
+.theme p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
