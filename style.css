@@ -96,3 +96,8 @@ form .equal {
     font-size: 20px;
     color: rgb(0, 0, 0);
 }
+
+body p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.3);
+}
