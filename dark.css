@@ -5,6 +5,7 @@
     outline: none;
     border: none;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,26 +28,7 @@ body {
     box-shadow: 3px 3px 10px rgba(12, 17, 22, 0.5), -3px -3px 10px rgba(79, 93, 103, 0.5);
 }
 
-form .display-screen {
-    display: flex;
-    justify-content: flex-end;
-    margin: 40px, 0;
-}
-
-form .display-screen input {
-    color: white;
-    height: 70px;
-    width: 100%;
-    padding: 0 12px;
-    margin: 10px 0 25px 0;
-    text-align: end;
-    border-radius: 10px;
-    background: transparent;
-    box-shadow: inset 3px 3px 10px rgba(12, 17, 22, 0.5), inset -3px -3px 10px rgba(79, 93, 103, 0.5);
-}
-
-
-.calculator form .btn {
+.calculator form input {
     color: white;
     height: 50px;
     width: 50px;
@@ -54,11 +36,26 @@ form .display-screen input {
     text-align: center;
     border-radius: 10px;
     background: transparent;
-    background: transparent;
     cursor: pointer;
+    border: none;
     box-shadow: 3px 3px 10px rgba(12, 17, 22, 0.5), -3px -3px 10px rgba(79, 93, 103, 0.5);
 }
 
+form .display-screen input {
+    color: white;
+    height: 80px;
+    width: 100%;
+    padding: 20px 12px;
+    margin: 10px 0 25px 0;
+    text-align: end;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: inset 3px 3px 10px rgba(12, 17, 22, 0.5), inset -3px -3px 10px rgba(79, 93, 103, 0.5);
+}
+
+form #equal {
+    width: 120px;
+}
 
 .calculator form .btn:active {
     box-shadow: inset -3px -3px 10px rgba(79, 93, 103, 0.5), inset 3px 3px 10px rgba(12, 17, 22, 0.5);
@@ -66,17 +63,6 @@ form .display-screen input {
 
 .calculator form .opt {
     color: tomato;
-}
-
-form .equal {
-    color: white;
-    height: 50px;
-    width: 120px;
-    margin: 5px;
-    border-radius: 10px;
-    background: transparent;
-    background: transparent;
-    box-shadow: 3px 3px 10px rgba(12, 17, 22, 0.5), -3px -3px 10px rgba(79, 93, 103, 0.5);
 }
 
 .theme {
@@ -103,4 +89,38 @@ form .equal {
 body p {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 330px){
+
+    .container {
+        min-height: 300px;
+        min-width: 270px;
+    }
+
+    .calculator form input {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        font-size: 14px;
+        margin: 6px;
+    }
+
+    form #equal {
+        width: 85px;
+        border-radius: 5px;
+    }
+    
+    form .display-screen input {
+        height: 70px;
+        width: 100%;
+        margin: 10px 0 25px 0;
+        border-radius: 10px;
+    }
 }
